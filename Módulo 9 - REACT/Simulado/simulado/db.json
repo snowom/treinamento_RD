@@ -1,0 +1,32 @@
+{
+  "categorias": [
+    {
+      "nome": "Home",
+      "id": 1
+    },
+    {
+      "nome": "Studio",
+      "id": 2
+    },
+    {
+      "nome": "Gallery",
+      "id": 3
+    },
+    {
+      "nome": "Blog",
+      "id": 4
+    },
+    {
+      "nome": "Catch",
+      "id": 5
+    }
+  ],
+  "Contato": [
+    {
+      "nome":"Teste",
+      "Email": "teste@teste.com",
+      "assunto": "teste",
+      "mensagem": "teste"
+    }
+  ]
+}

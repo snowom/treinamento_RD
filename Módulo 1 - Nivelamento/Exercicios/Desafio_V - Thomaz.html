@@ -1,0 +1,39 @@
+<script>
+
+/*
+_***************_
+*_*************_*
+**_***********_**
+***_*********_***
+****_*******_****
+*****_*****_*****
+******_***_******
+*******_*_*******
+********_********
+*/
+
+//DESAFIO 4
+
+var carac = "";
+const LIMITE_COLUNAS= 17;
+const LIMITE_LINHAS = 9;
+
+	document.write("<br>");
+	
+	for(var l=0;l<LIMITE_LINHAS ;l++){
+		for(var c=0;c<LIMITE_COLUNAS ;c++){
+		
+		//c == LIMITE_COLUNAS - (l-1);
+			
+			if( c == l  || c == ( (LIMITE_COLUNAS - 1) - l ) ){
+				carac= "_";
+			}else{
+				carac = "*";
+			}
+			
+			document.write(carac);
+		}
+		document.write("<br>");
+	}
+	
+</script>

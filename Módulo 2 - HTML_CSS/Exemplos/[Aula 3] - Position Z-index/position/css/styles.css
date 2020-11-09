@@ -1,0 +1,53 @@
+body {
+    background-color: #cccccc;
+}
+
+header {
+    width: 1200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid black;
+    height: 50px;
+    text-align: center;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.container {
+    background-color: skyblue;
+    border: solid 2px black;
+    width: 900px;
+    margin: 0 auto;
+
+}
+.div-padrao {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    overflow: hidden;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 82px;
+    margin-top: 10px;
+    border: solid 2px black
+}
+
+.relative {
+    position: relative;
+    right: 60px;
+    top: 50px;
+}
+
+.absolute {
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+}
+
+.fixed {
+    position: fixed;
+    top: 40px;
+    left: 500px;
+}

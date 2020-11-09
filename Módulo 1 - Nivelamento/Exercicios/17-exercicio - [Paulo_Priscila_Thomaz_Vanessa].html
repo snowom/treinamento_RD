@@ -1,0 +1,79 @@
+<script>
+
+
+var numerosSorteados = [];
+var chuteUsuario = [];
+
+	function sorteia(){
+		
+		const limite = 60;
+		
+		for(var numeros = 0; numeros<6; numeros++){
+			
+			var numeroAleatorio = Math.round( Math.random() * limite);
+			console.log("NUMERO INICIAL ==>" + numeroAleatorio);
+			
+			if( numeros == 0){
+				numerosSorteados.push(numeroAleatorio);
+			}
+			else{
+				
+				if( verificaRepetido(numerosSorteados, numeroAleatorio) == false ||  numeroAleatorio == 0){
+					
+					do{
+						numeroAleatorio = Math.round( Math.random() * limite);
+						
+					}while(verificaRepetido(numerosSorteados, numeroAleatorio) == false);
+					
+					console.log("NOVO NUMERO ALEATORIO ==>" + numeroAleatorio);
+				}
+				
+				numerosSorteados.push(numeroAleatorio);
+			}
+			
+		}
+		
+		//document.write(numerosSorteados);
+	}
+	
+
+	
+	function verificaRepetido(array, numeroSorteado){
+		
+		for(var i=0; i<array.length; i++){
+			
+			if( array[i] == numeroSorteado){
+				return false;
+			}
+		}
+	}
+	
+	
+	function numerosUsuario(){
+		
+		for(var chute = 0; chute<6; chute++){
+			chuteUsuario.push( parseInt(prompt("Digite um número:")) );
+		}
+	}
+	
+	
+	function comparaAcerto( sorteado, chutado){
+	
+	var acertos = 0;
+	
+		for(var i = 0; i<6; i++){
+			for(var j = 0; j<6; j++){
+			
+				if( sorteado[i] == chutado[j]){
+					acertos++;
+				}
+			}
+		}
+		
+		document.write("Voce acertou " + acertos + " numeros");
+	}
+	
+	numerosUsuario();
+	sorteia();
+	comparaAcerto(numerosSorteados, chuteUsuario);
+</script>

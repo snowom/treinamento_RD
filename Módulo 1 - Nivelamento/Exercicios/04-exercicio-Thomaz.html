@@ -1,0 +1,27 @@
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br>"); 
+		document.write("<hr>");
+		document.write("<br>"); 
+	}
+
+	function mostra(frase) {
+		document.write("<big>" + frase + "</big>"); 
+		pulaLinha();
+	}
+
+	var ano = 2020;
+	mostra("Eu nasci em : " + (ano - 21));
+	mostra("Jonas nasceu em : " + (ano - 22)); 
+	mostra("Fabio nasceu em : " + (ano - 36));
+	
+	document.write("<br><br>");
+	document.write("Caso eu esqueça de declarar a palavra <b>function</b>, a pagina retorna o seguinte erro: <i>Uncaught SyntaxError: Unexpected token {</i>");
+	
+	document.write("<br><br>");
+	document.write("Caso eu esqueça de colocar <b>()</b> apos <i>pulaLinha</i>, nao aparece nenhum erro no console, mas a funcao <i>pulaLinha</i> nao eh executada");
+	
+	
+</script>

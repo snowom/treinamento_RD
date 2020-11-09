@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*---begin header---*/
+header {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search input {
+    height: 25px;
+    padding-left: 5px;
+}
+.search button {
+    background-color: #243189;
+    color: #fff;
+    border: none;
+    height: 31px;
+    cursor: pointer; 
+}
+
+.search button:hover {
+    background-color: #09859a;
+}
+
+.login a {
+    color: #8d8178;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login a:before {
+    content: "";
+    background-image: url('../imagens_drogasil/header-account.png');
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    margin-left: -26px;
+    margin-top: -4px;
+}
+
+.cart {
+    background-color: #be0038;
+    width: 110px;
+    padding: 5px 5px;
+    text-align: right;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.cart span {
+    position: relative;
+    top: -7px;
+    right: 13px;
+}
+
+.cart img {
+    width: 30px;
+}
+
+/*---reponsive header---*/
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header div {
+        margin: 5px 0;
+    }
+    
+    
+}
+/*---end header---*/
+
+/*---begin nav---*/
+nav {
+    background-color: #be0038;
+    color: #fff;
+    text-align: center
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+nav li {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+nav li:hover {
+    background-color: white;
+    color: #be0038;
+}
+nav a {
+    color: #fff;
+}
+
+/*---reponsive nav---*/
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+}
+/*---end nav---*/
+
+/*---begin banners---*/
+#container_banners ul { 
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+
+}
+
+#container_banners li { 
+    display: block; 
+    list-style: none; 
+}
+
+button.prev, button.next {
+    display: flex; 
+    font-size: 32px;
+    align-items: center; 
+    justify-content: center;
+    color: #FFF; 
+    background-color: #333;
+    border-radius: 50%;
+    width: 44px; 
+    height: 44px;
+    border:none;
+    cursor: pointer;
+}
+
+button.prev {
+    position: absolute; 
+    left: 0;
+    margin-top: -200px;
+}
+
+button.next {
+    position: absolute; 
+    right: 0;
+    margin-top: -200px;
+}
+/*---end banners---*/
+
+/*---begin footer---*/
+footer {
+    background-color: #ececec;
+    border-top: 10px solid #be0038;
+    padding: 20px 20px 50px;
+    color: #8d8178;
+}
+
+footer .info {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+   
+}
+
+footer .title {
+    color: #be0038;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*---reponsive header---*/
+@media screen and (max-width: 768px) {
+    footer .info {
+        flex-direction: column;
+    }
+
+    footer p {
+        display: none;
+    }
+}
+/*---end footer---*/

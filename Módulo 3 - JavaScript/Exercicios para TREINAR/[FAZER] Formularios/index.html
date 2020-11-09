@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario - Exercicio</title>
+
+        <!-- CSS BOOTSTRAP -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- MEU CSS -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <div class="container">
+            <form id="formulario-cadastro">
+
+                <div class="row">
+
+                    <div class="col-6">
+                        <!-- INICIO PRIMEIRO FORMULARIO ESQUERDA -->
+                        <div class="container margem-top layout-div-form">
+                            <div class="row">
+                                <div class="col-6">
+                
+                                    <div class="container">
+                                        <div class="form-group">
+                                            <label for="txt-nome">Nome*</label>
+                                            <input type="text" class="form-control" id="txt-nome" placeholder="Nome" required>
+                                        </div>
+                                    </div>
+                
+                                    <div class="container">
+                                        <div class="form-group">
+                                            <label for="txt-CPF">CPF*</label>
+                                            <input type="text" class="form-control" id="txt-CPF" placeholder="CPF" required>
+                                        </div>
+                                    </div>
+                
+                                    <div class="container">
+                                        <div class="form-group">
+                                            <label for="txt-telefone">Telefone*</label>
+                                            <input type="text" class="form-control" id="txt-telefone" placeholder="(DDD) + 99999-9999" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FIM COLUNA 1 - ESQUERDA -->
+                
+                                <!-- INICIO COLUNA 2 - DIREITA -->
+                                <div class="col-6">
+                
+                                    <div class="container">
+                                        <div class="form-group">
+                                            <label for="txt-sobrenome">Sobrenome*</label>
+                                            <input type="text" class="form-control" id="txt-sobrenome" placeholder="Sobrenome" required>
+                                        </div>
+                                    </div>
+                
+                                    <div class="container">
+                                        <label for="cbb-genero">Genero*</label>
+                                        <select class="form-control" id="cbb-genero">
+                                            <option value=""></option>
+                                            <option value="M">Masculino</option>
+                                            <option value="F">Feminino</option>
+                                        </select>
+                                    </div>
+                
+                                    <div class="container margem-top">
+                                        <div class="form-group">
+                                            <label for="txt-celular">Celular</label>
+                                            <input type="text" class="form-control" id="txt-celular" placeholder="(DDD) + 99999-9999" required>
+                                        </div>
+                                    </div>
+                
+                                </div>
+                                <!-- FIM COLUNA 2 - DIREITA -->
+                
+                            </div>
+                            <!-- FIM LINHA 1 -->
+                
+                            <div class="container">
+                                <div class="row">
+                
+                                    <div class="col-4">
+                                        <label for="txt-dia-nasc">Data de Nascimento</label>
+                                        <input type="text" class="form-control" id="txt-dia-nasc" placeholder="DD" required>
+                                    </div>
+                    
+                                    <div class="col-4">
+                                        <label for="txt-mes-nasc" style="color: white">Data de Nascimento</label>
+                                        <input type="text" class="form-control" id="txt-mes-nasc" placeholder="MM">
+                                    </div>
+                
+                                    <div class="col-4">
+                                        <label for="txt-ano-nasc" style="color: white">Data de Nascimento</label>
+                                        <input type="text" class="form-control" id="txt-ano-nasc" placeholder="AAAA">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIM PRIMEIRO FORMULARIO ESQUERDA -->
+                    </div>
+    
+                    <div class="col-6">
+                        <div class="container margem-top layout-div-form">
+    
+                            <div class="container">
+                                <label for="txt-email">Email*</label>
+                                <input type="text" class="form-control" id="txt-email" placeholder="Email" required>
+                            </div>
+    
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="container" style="margin-top:10px">
+                                        <label for="txt-senha">Senha*</label>
+                                        <input type="password" class="form-control" id="txt-senha" placeholder="Senha" required>
+                                    </div>
+                                </div>
+    
+                                <div class="col-6">
+                                    <div class="container" style="margin-top:10px">
+                                        <label for="txt-conf-senha">Confirmar Senha*</label>
+                                        <input type="password" class="form-control" id="txt-conf-senha" placeholder="Senha" required>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                        <div class="container margem-top">
+                            <div class="form-check">
+                                <input type="checkbox" id="chk-noticias">
+                                <label for="chk-noticias">Desejo receber diariamente informações e ofertas.</label>
+                            </div>
+                        </div>
+    
+                        <div class="container d-flex justify-content-around margem-top">
+                            <button type="submit" class="btn btn-outline-success" id="btn-submit">Enviar</button>
+                            <button type="reset" class="btn btn-outline-warning" id="btn-reset">Limpar</button>
+                        </div>
+                    </div>
+    
+                </div>
+
+            </form>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+1 - criar uma pasta ao lado da pasta laradock neste exemplo a pasta chamará: "projeto"
+
+2 - dentro pasta laradock/nginx/sites/, fazer uma cópia do arquivo "app.conf.example". Vai ser gerado um arquivo chamado "app.conf copy.example".
+
+3 - renomear o arquivo "app.conf copy.example" para o nome de su preferencia. Neste caso vou renomear para "projeto_teste.conf".
+
+4 - no arquivo "projeto_teste.conf" temos a seguinte configuração:
+    server_name app.test;
+    root /var/www/app;
+
+mudar o server_name para o nomedesejado.test, neste caso "projeto.test" e o nome da pasta criada:
+    server_name projeto.test;
+    root /var/www/projeto; 
+
+5 - abrir o arquivo de hosts
+comando para abrir no terminal
+sudo vim /etc/hosts
+
+6 - adicionar a linha:
+    127.0.1.1 server_name configurado no arquivo .conf
+    neste caso ficará assim:
+    127.0.1.1 projeto.test
+
+comando do docker
+    subir o container do nginx
+        sudo docker-compose up -d nginx
+
+    derrubar todos os containers
+        sudo docker-compose down
+
+    reiniciar os containers
+        sudo docker-compose restart
+
+    ver os containers que estão "rodando"
+        sudo docker ps
+

@@ -1,0 +1,99 @@
+<script>
+
+	var tamanhoQuad = parseInt(prompt("Escolha o tamanho do quadrado a ser desenhado"));
+	var lateralQuad = "*";
+	
+	for(var linha = 0;linha<tamanhoQuad;linha++){
+	
+		if(linha==0 || linha==(tamanhoQuad-1)){
+			
+			for(var i=0;i<tamanhoQuad;i++){
+				document.write("*");
+			}
+			document.write("<br>");
+			
+		}
+		else{
+			for(var coluna=0;coluna<(tamanhoQuad-2);coluna++){
+				lateralQuad = lateralQuad + "~";
+			}
+			lateralQuad = lateralQuad + "*";
+			document.write(lateralQuad);
+			document.write("<br>");
+			var lateralQuad = "*";
+		}
+	}
+	
+
+
+
+//DESAFIO 3	
+
+
+	document.write("<br>");
+	
+		var carac = "*";
+		
+		for(var asc=0; asc<10; asc++){
+			document.write(carac);
+			carac = carac+"*";
+			document.write("<br>");
+		}
+
+	
+	//OUTRA MANEIRA
+	
+	//document.write("<br>");
+	//
+	//for(var lin=0;lin<10;lin++){
+	//	for(var col=0;col<10;col++){
+	//
+	//		var ctr=0;
+	//		
+	//		do{
+	//			document.write("*");
+	//			ctr++;
+	//		}while( (ctr<=lin) );
+	//		document.write("<br>");
+	//		break;
+	//	}
+	//}
+	
+	
+/*
+_***************_
+*_*************_*
+**_***********_**
+***_*********_***
+****_*******_****
+*****_*****_*****
+******_***_******
+*******_*_*******
+********_********
+*/
+
+//DESAFIO 4
+
+var carac = "";
+const LIMITE_COLUNAS= 17;
+const LIMITE_LINHAS = 9;
+
+	document.write("<br>");
+	
+	for(var l=0;l<LIMITE_LINHAS ;l++){
+		for(var c=0;c<LIMITE_COLUNAS ;c++){
+		
+		//c == LIMITE_COLUNAS - (l-1);
+			
+			if( c == l  || c == ( (LIMITE_COLUNAS - 1) - l ) ){
+				carac= "_";
+			}else{
+				carac = "*";
+			}
+			
+			document.write(carac);
+		}
+		document.write("<br>");
+	}
+	
+</script>

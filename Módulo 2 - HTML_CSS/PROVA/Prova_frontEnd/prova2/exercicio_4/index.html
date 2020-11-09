@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio 4</title>
+
+        <!-- CSS BOOTSTRAP -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- MEU CSS -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <div class="container">
+            <form id="formulario-cadastro">
+
+                <div class="row">
+
+                    <div class="col-12">
+                    
+                        <!-- INICIO PRIMEIRO FORMULARIO ESQUERDA -->
+                        <div class="container margem-top layout-div-form">
+                            <div class="row">
+
+                                <!-- LINHA 1 -->
+                                <div class="col-6">
+                
+                                    <div class="container">
+                                        <div class="form-group">
+                                            <label for="txt-nome-medico">Nome do Médico*</label>
+                                            <input type="text" class="form-control" id="txt-nome-medico" placeholder="Nome" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="container">
+                                        <div class="form-group">
+                                            <label for="txt-sobrenome">CRM do Médico*</label>
+                                            <input type="text" class="form-control" id="txt-crm" placeholder="CRM" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+
+                                <!-- LINHA 2 -->
+                                <div class="col-6">
+                
+                                    <div class="container">
+                                        <div class="form-group">
+                                            <label for="txt-data-receita">Data Receita*</label>
+                                            <input type="text" class="form-control" id="txt-data-receita" placeholder="Nome" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="container">
+                                        <div class="form-group">
+                                            <label for="txt-qtd-caixas">Quantidade de Caixas*</label>
+                                            <input type="text" class="form-control" id="txt-qtd-caixas" placeholder="Quantidade de caixas" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIM PRIMEIRO FORMULARIO ESQUERDA -->
+
+
+                        <div class="container margem-top layout-div-form">
+    
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="container">
+                                        <div class="form-group">
+                                            <label for="txt-nome">Nome do paciente*</label>
+                                            <input type="text" class="form-control" id="txt-nome" placeholder="Nome do paciente" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="container">
+                                        <div class="form-group">
+                                            <label for="txt-cpf">CPF do paciente*</label>
+                                            <input type="text" class="form-control" id="txt-cpf" placeholder="CPF do paciente" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="container">
+                                        <div class="form-group">
+                                            <label for="txt-data-nasc">Data de Nascimento do paciente*</label>
+                                            <input type="text" class="form-control" id="txt-data-nasc" placeholder="Data de Nascimento do paciente" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="container">
+                                        <label for="cbb-genero">Genero*</label>
+                                        <select class="form-control" id="cbb-genero" required>
+                                            <option value=""></option>
+                                            <option value="M">Masculino</option>
+                                            <option value="F">Feminino</option>
+                                            <option value="O">Outro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                        <div class="container d-flex justify-content-around margem-top" style="margin-bottom: 40px;">
+                            <button type="submit" class="btn btn-outline-success" id="btn-submit">Enviar</button>
+                            <button type="submit" class="btn btn-outline-warning" id="btn-reset">Limpar</button>
+                        </div>
+
+                    </div>
+    
+                </div>
+
+            </form>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

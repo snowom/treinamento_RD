@@ -1,0 +1,17 @@
+.container-btn {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.estado-civil:checked ~ label {
+    color: blue;
+    font-weight: bold;
+}
+
+@media screen and (max-width:576px) {
+    .container-btn {
+        flex-direction: column-reverse;
+        justify-content:center
+    }
+}

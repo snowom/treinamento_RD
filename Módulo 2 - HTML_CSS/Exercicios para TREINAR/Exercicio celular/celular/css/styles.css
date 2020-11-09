@@ -1,0 +1,11 @@
+header{
+    width: 960px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: auto;
+}
+
+
+header div{
+    display: inline-block;
+}

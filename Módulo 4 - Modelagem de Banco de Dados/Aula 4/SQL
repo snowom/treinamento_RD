@@ -1,0 +1,41 @@
+/*create table Produto(cd_produto bigint not null auto_increment,
+                     nm_produto varchar(50) not null,
+                     cd_tipo bigint not null,
+                     vl_ult_aquisicao float(6,2),
+                     md_altura_cm float(4,2),
+                     md_largura_cm float(4,2),
+                     md_profundidade_cm float(4,2),
+                     primary key (cd_produto));
+               
+create table Tipo_Produto(cd_tipo_produto bigint not null auto_increment,
+                          ds_tipo_produto varchar(50) not null,
+                         primary key (cd_tipo_produto));
+
+alter table Produto rename column cd_tipo to cd_tipo_produto;
+alter table Produto add constraint fk_cd_tipo_produto
+foreign key (cd_tipo_produto) references Tipo_Produto(cd_tipo_produto);
+alter table Produto add (fl_inativo int, fl_deletado int);
+
+insert Tipo_Produto(cd_tipo_produto, ds_tipo_produto) values(default,'MEDICAMENTO');
+insert Tipo_Produto(cd_tipo_produto, ds_tipo_produto) values(default,'PERFUMARIA');
+insert Tipo_Produto(cd_tipo_produto, ds_tipo_produto) values(default,'OTC');
+insert Produto(cd_produto, 
+	           nm_produto, 
+	           cd_tipo_produto, 
+	           vl_ult_aquisicao, 
+	           md_altura_cm, 
+	           md_largura_cm, 
+	           md_profundidade_cm,
+	           fl_inativo,
+	           fl_deletado) 
+	           values(default,'NEOSALDINA',1,30.0,2,1.5,4.0,0,0);
+select p.cd_produto as "COD PRODUTO",
+       p.nm_produto as "PRODUTO",
+       tp.ds_tipo_produto as "TIPO PRODUTO"
+from Produto p
+inner join Tipo_Produto tp on tp.cd_tipo_produto = p.cd_tipo_produto 
+
+select * from Tipo_Produto tp 
+
+update Produto pp set pp.cd_tipo_produto = 3 where pp.cd_produto in(30004, 30003)
+**/

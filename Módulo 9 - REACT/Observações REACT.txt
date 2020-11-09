@@ -1,0 +1,3 @@
+--> Sempre que exportar mais de 1 componente, englobar ele com um container (Div's) ou chamar os componentes entre <></>
+
+--> Para passar conteudos filhos dentro de um container(Div's), deve se utilizar o comando {props.children}

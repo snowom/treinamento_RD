@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contato</title>
+        <meta charset="utf-8">
+        <link href="css/stylesContato.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Formulário de Contato</h1>
+
+        <form>
+            <label>Nome e Sobrenome</label>
+            <input type="text" name="nomeSobrenome" placeholder= "Nome e sobrenome" required>
+            <br>
+            <br>
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="email@teste.com" required>
+
+            <br>
+            <br>
+            
+            <label>Escolha um assunto</label>
+            <select name="assuntos">
+                <option value="">Escolha um assunto</option>
+                <option value="as1">Assunto 1</option>
+                <option value="as2">Assunto 2</option>
+                <option value="as3">Assunto 3</option>
+            </select>
+
+            <br>
+            <br>
+            <br>
+
+            <label>Escolha um genero: </label>
+            <br>
+            <br>
+            <input type="radio" value="F" name="genero">
+            <label>Feminino</label>
+            <input type="radio" valeu="M" name=genero>
+            <label>Masculino</label>
+            <input type="radio" value="ND" name="genero">
+            <label>Prefiro não responder</label>
+
+            <br>
+            <br>
+            <br>
+
+            <label>Passatempos</label>
+            <br>
+            <br>
+
+            <input type="checkbox" value="pst1">
+            <label>Passatempo 1</label>
+            <br>
+            <input type="checkbox" value="pst2">
+            <label>Passatempo 2</label>
+            <br>
+            <input type="checkbox" value="pst3">
+            <label>Passatempo 3</label>
+            <br>
+            <input type="checkbox" value="pst4">
+            <label>Passatempo 4</label>
+            <br>
+            <input type="checkbox" value="pst5">
+            <label>Passatempo 5</label>
+
+            <br>
+            <br>
+            <br>
+
+            <label>Comentarios</label>
+            <br>
+            <textarea name="comentario" required></textarea>
+            
+            <br>
+            <br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar dados</button>
+            
+
+        </form>
+    </body>
+</html>

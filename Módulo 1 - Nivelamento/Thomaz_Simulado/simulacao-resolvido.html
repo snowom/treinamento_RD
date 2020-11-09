@@ -1,0 +1,135 @@
+<script>
+
+// exercicio 06
+function imprimirTabela(numero) {
+  for (var l = 1; l <= numero; l++) {
+    for (var c = 1; c <= l; c++) {
+	  document.write(l*c);
+	  document.write(" ");
+	}
+	document.write("<br>");
+  }
+}
+
+imprimirTabela(10);
+
+// exercicio 05
+function sequenciaNumeros(numero) {
+  var array = [];
+  while (numero > 1) {
+    if (numero % 2 == 0) {
+	  numero = numero / 2;
+	} else {
+	  numero = 3 * numero + 1;
+	}
+    array.push(numero);
+  }
+  return array;
+}
+
+document.write(sequenciaNumeros(10)); // deve retornar [5, 16, 8, 4, 2, 1]
+document.write("<br>");
+document.write(sequenciaNumeros(2048));
+
+// exercicio 04
+
+// depois tentem uma forma diferente de resolver esse exercício
+function fibonacci(posicao) {
+
+  var serie = [0, 1];
+  
+  if (posicao == 0 || posicao == 1) {
+    return serie[posicao];
+  } else {
+    var i = 2;
+    while (i <= posicao) {
+	  serie[i] = serie[i-1] + serie[i-2];
+	  i++;
+	}
+	return serie[posicao];
+  }
+  
+}
+
+document.write(fibonacci(0)); // retorno deve ser 0
+document.write("<br>");
+document.write(fibonacci(1)); // retorno deve ser 1
+document.write("<br>");
+document.write(fibonacci(2)); // retorno deve ser (0+1) = 1
+document.write("<br>");
+document.write(fibonacci(3)); // retorno deve ser (1+1) = 2
+document.write("<br>");
+document.write(fibonacci(4)); // retorno deve ser (2+1) = 3
+document.write("<br>");
+document.write(fibonacci(5)); // retorno deve ser (3+2) = 5
+document.write("<br>");
+document.write(fibonacci(6));
+document.write("<br>");
+document.write(fibonacci(7));
+document.write("<br>");
+document.write(fibonacci(10));
+*/
+
+// exercicio 03
+function numerosMultiplos(multiplicador, inicio, fim) {
+  var array = [];
+  for (var numero = inicio; numero <= fim; numero++) {
+    if (numero % multiplicador == 0) {
+	  array.push(numero);
+	}
+  }
+  return array;
+}
+
+function numerosMultiplos2(multiplicador, inicio, fim) {
+  var array = [];
+  //var i = 0;
+  for (var cont = 1; multiplicador * cont <= fim; cont++) {
+    if ((multiplicador * cont) >= inicio && 
+	    (multiplicador * cont) <= fim) {
+      //array[i] = multiplicador * cont;
+	  //i++;
+	  array.push(multiplicador * cont);
+	}
+  }
+  return array;
+}
+
+document.write(numerosMultiplos(4, 5, 43));
+document.write("<br>");
+document.write(numerosMultiplos2(4, 5, 43));
+
+// exercicio 02
+function somarNumeros(de, ate) {
+  var soma = 0;
+  for (var numero = de; numero <= ate; numero++) {
+	//soma = soma + numero;
+	soma += numero;
+  }
+  return soma;
+}
+
+//function somarNumeros(de, ate) {
+//  return ((de+ate)*((ate-de)+1)) / 2; // formula da soma da Progressão Aritmetica
+//}
+
+//somarNumeros(1, 10);
+var teste = somarNumeros(10, 13);
+console.log(teste);
+
+document.write(somarNumeros(1, 10));
+*/
+
+// exercicio 01
+function imprimirNumeros(de, ate) {
+  for (var numero = de; numero <= ate; numero++) {
+    document.write(numero);
+	document.write("<br>");
+  }
+}
+
+//imprimirNumeros(1, 100);
+//imprimirNumeros(10, 20);
+imprimirNumeros(-10, 10);
+
+</script>

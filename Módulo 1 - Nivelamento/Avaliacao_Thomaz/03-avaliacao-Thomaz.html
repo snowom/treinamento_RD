@@ -1,0 +1,24 @@
+<script>
+
+	function alturaEscada(altura){
+	
+		var degrau = "#";
+		var espaco = "&nbsp ";
+		
+		var arrayEscada = [];
+		
+		for(var i=1; i<=altura; i++){
+		
+			var tmp = espaco.repeat( (altura-i) ) + degrau.repeat(i);
+			arrayEscada.push( tmp );
+		}
+		
+		return arrayEscada;
+	}
+	
+	//TESTE DE CHAMADA E VISUALIZAÇÂO DO RETORNO DA FUNCAO
+	
+    //var num1 = 9;
+    //document.write( alturaEscada( num1 ));
+
+</script>

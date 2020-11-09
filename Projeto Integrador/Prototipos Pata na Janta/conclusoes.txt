@@ -1,0 +1,103 @@
+--> Decisões Hoje - 29/08 - Reunião 1
+
+- Menu Lateral (Uma opção mais clean);
+- Adote um Pet - Link para redirecionar a uma pagina de uma instituição de adoção de pet;
+--> Banner vai receber promoçoes imperdíveis (PREÇO IMPERDIVEL);
+
+Tópicos que iremos abranger:
+
+Cachorro:
+
+--> Alimentação;
+--> Conforto (Ver site Cobasi);
+--> Brinquedos (Ver site Cobasi);
+--> Passeio;
+--> **Farmacia
+
+
+Gato:
+
+--> Alimentação;
+--> Brinquedos (Ver site Cobasi);
+--> Conforto (Ver site Cobasi);
+--> Ambiente (Ver site Cobasi) -- Arranhador;
+
+
+=======================  Decisões Reunião 2 - 31/08 ==========================================
+
+
+COR HEADER --> #b7773f - Marrom chocolate claro
+COR NAV --> #351912 - Marrom escuro
+FOOTER --> #351912 - Marrom escuro
+COR FONTE FOOTER --> Branco
+COR BACKGROUND CARD --> #f5f5f5 - Branco fresco
+COR BACKGROUND BODY --> ebebeb - Branco Gelo
+
+
+COR BOTÃO
+b7773f --> Rosa Sorvete
+
+*** Obs - Mudar cor de fundo input pesquisa para branco gelo
+
+
+TELAS A FAZER
+
+- Home (Produtos) - PRONTO
+- Checkout - FAZER JUNTOS
+
+G2 - João
+- Adoção de Pets - SIMPLES;
+-Pagina Resultado Busca;
+
+G3 - Thomaz
+- Detalhe do Produto - COMPLICADO;
+- Consulta de Produtos (Categorias) - MENU LATERAL ABERTO - SIMPLES;
+
+G4 - Vanessa
+- Login;
+- Cadastro de Cliente;
+
+G5 - Lilian
+- Carrinho de compras;
+- Sucesso de compra;
+
+G6 - Luiz e Paulo
+- Histórico de pedidos + DETALHES DO PEDIDO;
+Formulário de Contato - FALE CONOSCO - SAC ;
+
+
+
+
+=======================  Decisões Reunião 3 - 01/09 ==========================================
+
+--> COLOCAR BANNER NO MEIO - FEITO;
+--> Substituir menu lateral por um menu dropdown - FEITO;
+--> Verificar forma de contato - Email Padrão;
+--> MENU SUSPENSO ( Dropdown ) APÓS REALIZAR LOGIN (Sair e Hitórico de Compra)
+--> API CEP - https://viacep.com.br/ws/02539000/json/ -- txtCep.onfocus(){};
+--> Colocar opção boleto
+
+
+IMPLEMENTAÇÕES FUTURAS
+--> Esqueci senha;
+--> Alterar Dados;
+--> Calcular Frete;
+--> Adc endereço de entrega;
+
+
+============ OBS =============================
+
+--> Colocar complemento em endereco - FEITO
+--> NAVBAR DropDownLink Bootstrap em Menu Lateral (Pills with dropdowns ou Tabs with dropdowns) - FEITO
+
+
+
+
+=============== Decisões Reunião 5 - 04/09 =================================================
+
+--> Excluir página de Detalhes Pedidos - FEITO
+--> Adicinoar botão comprar nos cards dos produtos - FEITO
+--> Tirar carrossel central da página home - FEITO
+--> Tirar sugestão de produtos nos detalhes do produto - FEITO
+--> Arrumar espaçamento Checkout  - FEITO
+--> Arrumar espaçamento em Detalhes do Produto - FEITO

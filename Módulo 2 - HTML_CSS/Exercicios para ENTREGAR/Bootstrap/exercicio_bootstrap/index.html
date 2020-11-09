@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap</title>
+
+        <!-- CSS BOOTSTRAP -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+        <!-- MEU CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+
+
+        <!-- JS BOOTSTRAP -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+
+        <!-- DIV LOGO -->
+        <div id="logo" class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- <center> -->
+                        <img id="logo" src="images/fish.png"/>
+                    <!-- </center> -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- DIV BTNS MENU -->
+        <div id="menu" class="container-btn">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="container-descricao">
+                        <h6>Conheça alguns dos animais marinhos abaixo:</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <a class="link-btn" href="#div-conteudo-1">
+                        <div class="btn">Polvo</div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <a class="link-btn" href="#div-conteudo-2">
+                        <div class="btn">Água Viva</div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <a class="link-btn" href="#div-conteudo-3">
+                        <div class="btn">Estrela do Mar</div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <a class="link-btn" href="#div-conteudo-4">
+                        <div class="btn">Cavalo Marinho</div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <a class="link-btn" href="#div-conteudo-5">
+                        <div class="btn">Tartaruga</div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <a class="link-btn" href="#div-conteudo-6">
+                        <div class="btn">Arraia</div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARROSEL AQUI -->
+        <!-- <div class="container-carrossel"> -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <!-- DIV CARROSEL BOOTSTRAP -->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <a target="_blank" href="https://gruposarlo.com.br/2018/01/24/peixes-de-cardume/">
+                                    <img src="images/cardume.jpg" class="d-block w-100 img-carrossel front">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block fundo">
+                                    <h5>Cardumes</h5>
+                                    <p>Você já se sentiu um “peixe fora d’água”? Hoje estamos aqui para falar justamente do cardume. Pra que serve? Por que se forma? Clique no banner para saber mais!</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <a target="_blank" href="https://g1.globo.com/sp/santos-regiao/noticia/coral-com-poder-devastador-ameaca-santuario-marinho-no-litoral-de-sp.ghtml">
+                                    <img src="images/coral.jpg" class="d-block w-100 img-carrossel">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block fundo">
+                                    <h5>Corais</h5>
+                                    <p>Coral com poder devastador ameaça destruir santuário marinho no litoral de SP.<br>Clique no banner para ler a notícia completa!</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <a target="_blank" href="https://www.megacurioso.com.br/fotografia/36724-7-magnificas-fotos-tiradas-de-animais-luminosos-no-fundo-do-mar.htm">
+                                    <img src="images/abissal.jpg" class="d-block w-100 img-carrossel">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block fundo">
+                                    <h5>Seres Luminosos Abissais</h5>
+                                    <p>Clique no banner e conheça um pouco mais sobre algumas dessas incríveis e curiosas criaturas!</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CONTEUDO AQUI -->
+        <div class="container">
+
+            
+            <div class="row">
+
+                <div class="col-12 col-sm-12 col-md-4">
+                    
+                    <div id="div-conteudo-1" class="card div-conteudo">
+                        <img class="card-img-top img-conteudo2" src="images/octopus.jpg">
+                        <br>
+                        <h5 class="titulo-conteudo">Polvo</h5>
+                        <br>
+                        <p class="descricao-conteudo">Os polvos são moluscos da classe Cephalopoda. Extremamente interessantes e considerado o animal mais inteligente do planeta, vivem no fundo do mar em praticamente qualquer profundidade. Estima-se que existam, no mínimo 100 espécies.</p>
+
+                        <div class="container-links">
+                            <a class="link-ver-mais" target="_blank" href="https://segredosdomundo.r7.com/polvos/">
+                                <div class="btn-mais">Ver Mais</div>
+                            </a>
+
+                            <a class="link-ver-mais" href="#logo">
+                                <div class="btn-mais">Voltar para topo</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4">
+                    <div id="div-conteudo-2" class="card div-conteudo">
+                        <img class="card-img-top img-conteudo2" src="images/jellyfish.jpg">
+                        <br>
+                        <h5 class="titulo-conteudo">Água Viva</h5>
+                        <br>
+                        <p class="descricao-conteudo">A água-viva é um animal marinho, invertebrado pertencente ao filo dos cnidários. O corpo de uma água-viva adulta é composto de uma substância gelatinosa em forma de sino que envolve sua estrutura interna, onde saem vários tentáculos.</p>
+
+                        <div class="container-links">
+                            <a class="link-ver-mais" target="_blank" href="https://planetabiologia.com/agua-viva/">
+                                <div class="btn-mais">Ver Mais</div>
+                            </a>
+
+                            <a class="link-ver-mais" href="#logo">
+                                <div class="btn-mais">Voltar para topo</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4">
+                    <div id="div-conteudo-3" class="card div-conteudo">
+                        <img class="card-img-top img-conteudo2" src="images/starfish.jpeg">
+                        <br>
+                        <h5 class="titulo-conteudo">Estrela do Mar</h5>
+                        <br>
+                        <p class="descricao-conteudo">A Estrela-do-mar é um animal equinoderme em forma de estrela pertencente a classe Asteroidea e ao subfilo Asterozoa. Existem cerca de 1.900 espécies de estrela-do-mar no fundo do mar em todos os oceanos do mundo.</p>
+
+                        <div class="container-links">
+                            <a class="link-ver-mais" target="_blank" href="https://planetabiologia.com/estrela-do-mar-curiosidades/">
+                                <div class="btn-mais">Ver Mais</div>
+                            </a>
+
+                            <a class="link-ver-mais" href="#logo">
+                                <div class="btn-mais">Voltar para topo</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            
+            <div class="row">
+
+                <div class="col-12 col-sm-12 col-md-4">
+                    <div id="div-conteudo-4" class="card div-conteudo">
+                        <img class="card-img-top img-conteudo2" src="images/seahorse.jpg">
+                        <br>
+                        <h5 class="titulo-conteudo">Cavalo Marinho</h5>
+                        <br>
+                        <p class="descricao-conteudo">Hippocampus é um gênero de peixes ósseos, pertencente à família Syngnathidae, de águas marinhas temperadas e tropicais que engloba as espécies conhecidas pelo nome comum de cavalo-marinho.</p>
+
+
+                        <div class="container-links">
+                            <a class="link-ver-mais" target="_blank" href="https://brasilescola.uol.com.br/animais/cavalo-marinho.htm">
+                                <div class="btn-mais">Ver Mais</div>
+                            </a>
+    
+                            <a class="link-ver-mais" href="#logo">
+                                <div class="btn-mais">Voltar para topo</div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4">
+                    <div id="div-conteudo-5" class="card div-conteudo">
+                        <img class="card-img-top img-conteudo2" src="images/tartaruga.jpg">
+                        <br>
+                        <h5 class="titulo-conteudo">Tartaruga</h5>
+                        <br>
+                        <p class="descricao-conteudo">Tartaruga-marinha é a família da ordem das tartarugas que inclui as espécies que habitam mares tropicais e subtropicais em todo o mundo. O grupo é constituído por seis gêneros e sete espécies, todas elas ameaçadas de extinção.</p>
+
+                        <div class="container-links">
+                            <a class="link-ver-mais" target="_blank" href="https://brasilescola.uol.com.br/animais/tartaruga-marinha.htm">
+                                <div class="btn-mais">Ver Mais</div>
+                            </a>
+
+                            <a class="link-ver-mais" href="#logo">
+                                <div class="btn-mais">Voltar para topo</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4">
+                    <div id="div-conteudo-6" class="card div-conteudo">
+                        <img class="card-img-top img-conteudo2" src="images/arraia.jpg">
+                        <br>
+                        <h5 class="titulo-conteudo">Arraia</h5>
+                        <br>
+                        <p class="descricao-conteudo">Arraias, raias ou peixes batóides são peixes cartilaginosos marinhos classificados na infraclasse Batoidea da classe Elasmobranchii, grupo que também contêm os tubarões. A arraia é encontrada em todos os oceanos.</p>
+
+                        <div class="container-links">
+                            <a class="link-ver-mais" target="_blank" href="https://pt.wikipedia.org/wiki/Batoidea">
+                                <div class="btn-mais">Ver Mais</div>
+                            </a>
+
+                            <a class="link-ver-mais" href="#logo">
+                                <div class="btn-mais">Voltar para topo</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM LINHA 2 -->
+
+        </div>
+        
+
+
+        <!-- RODAPE -->
+        <footer class="rodape margem">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container-infos">
+                        
+                        <h6 class="infos">
+                            <a class="link-infos" target="_blank" href="https://www.facebook.com">
+                                Facebook
+                            </a>
+                        </h6>
+                        <h6 class="infos"> | </h6>
+
+                        <h6 class="infos">
+                            <a class="link-infos" target="_blank" href="https://www.twitter.com">
+                                Twitter
+                            </a>
+                        </h6>
+                        <h6 class="infos"> | </h6>
+
+                        <h6 class="infos">
+                            <a class="link-infos" target="_blank" href="https://www.instagram.com">
+                                Instagram
+                            </a>
+                        </h6>
+                        <h6 class="infos"> | </h6>
+
+                        <h6 class="infos">
+                            <a class="link-infos" target="_blank" href="https://www.tamar.org.br/">
+                                Projeto TAMAR
+                            </a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

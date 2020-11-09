@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>RD Fitness</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/slider-styles.css" type="text/css" media="all" />
+	<link href='//fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.backgroundPosition.js"></script>
+	<script>
+		$(document).ready(function () {
+
+			$('#ver li a').hover(
+				function () {
+					width = $(this).width() * (-1);
+					$(this).stop().animate({ 'backgroundPosition': '(' + width + ' 0)' }, { duration: 200 });
+				},
+
+				function () {
+					$(this).stop().animate({ 'backgroundPosition': '(0 0)' }, { duration: 200 });
+				}
+			);
+
+			$('#hor li a').hover(
+				function () {
+					height = $(this).height() * (-1);
+					$(this).stop().animate({ 'backgroundPosition': '(0 ' + height + ')' }, { duration: 200 });
+				},
+
+				function () {
+					$(this).stop().animate({ 'backgroundPosition': '(0 0)' }, { duration: 200 });
+				}
+			);
+
+		});
+	</script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="wrap">
+			<div class="logo"><a href="index.html"><img src="images/logo.png" alt="Fitness" /></a></div>
+			<ul id="ver">
+				<li><a href="index.html" class="home">Home</a></li>
+				<li><a href="studio.html" class="studio">Studio</a></li>
+				<li><a href="gallery.html" class="gallery">Gallery</a></li>
+				<li><a href="blog.html" class="blog">Blog</a></li>
+				<li><a href="catch.html" class="catch">Catch</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="main-body">
+			<div class="banner">
+				<img src="images/banner.jpg" alt="" />
+			</div>
+			<div class="hr"></div>
+			<div class="grids">
+				<div class="blogs">
+					<h2>Blogs</h2>
+					<div class="blog-top">
+						<h3>Nam liber tempor cum </h3>
+						<img src="images/pic6.jpg" alt="" />
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+							tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+							nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+							Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+							illum </p>
+						<div>
+							<p><span class="gray">Read >></span></p>
+						</div>
+					</div>
+					<div class="blog-top">
+						<h3>Nam liber tempor cum </h3>
+						<img src="images/pic7.jpg" alt="" />
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+							tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+							nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+							Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+							illum </p>
+						<div>
+							<p><span class="gray">Read >></span></p>
+						</div>
+					</div>
+				</div>
+				<div class="bot-grid1">
+					<h2>Weight Loss Basics</h2>
+					<div class="sidebar-nav">
+						<ul>
+							<li><a href="#">Always free from repetition</a></li>
+							<li><a href="#">Always free from repetition</a></li>
+							<li><a href="#">The standard chunk of Lorem Ipsum</a></li>
+							<li><a href="#">The standard chunk of Lorem Ipsum</a></li>
+							<li><a href="#">The standard chunk of Lorem Ipsum</a></li>
+							<li><a href="#">Always free from repetition</a></li>
+						</ul>
+					</div>
+					<div class="bot-grid-right">
+						<h3>Recent Comments</h3>
+						<div class="grid-right-desc">
+							<h4>Guest</h4>
+							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+								nisl ut aliquip ex ea commodo consequat.</p>
+						</div>
+						<div class="grid-right-desc">
+							<h4>Guest1</h4>
+							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+								nisl ut aliquip ex ea commodo consequat.</p>
+						</div>
+						<div class="grid-right-desc">
+							<h4>Guest2</h4>
+							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+								nisl ut aliquip ex ea commodo consequat.</p>
+						</div>
+						<div class="grid-right-desc">
+							<h4>Guest3</h4>
+							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+								nisl ut aliquip ex ea commodo consequat.</p>
+						</div>
+						<div class="grid-right-desc">
+							<h4>Guest4</h4>
+							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+								nisl ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-top">
+		<div class="wrap">
+			<div class="f-left">
+				<h2>About</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+					laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+					ullamcorper suscipit lobortis</p>
+			</div>
+			<div class="f-left">
+				<h2>Recent posts</h2>
+				<div class="f-grid">
+					<div class="f-img">
+						<img src="images/pic4.jpg" alt="" />
+					</div>
+					<div class="f-desc">
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit tincidunt</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="f-grid">
+					<div class="f-img">
+						<img src="images/pic5.jpg" alt="" />
+					</div>
+					<div class="f-desc">
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit tincidunt</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="f-left">
+				<h2>Twitter</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+					laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+					ullamcorper suscipit lobortis nisl ut</p>
+			</div>
+			<div class="f-right">
+				<h2>Customer care</h2>
+				<div class="footer-nav">
+					<ul>
+						<li><a href="#">Always free from repetition</a></li>
+						<li><a href="#">Always free from repetition</a></li>
+						<li><a href="#">The standard chunk of Lorem Ipsum</a></li>
+						<li><a href="#">The standard chunk of Lorem Ipsum</a></li>
+						<li><a href="#">The standard chunk of Lorem Ipsum</a></li>
+						<li><a href="#">Always free from repetition</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrap">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="studio.html">Studio</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="catch.html">Catch</a></li>
+			</ul>
+			<div class="copy">
+				<p>&copy; 2020 Fitness. All Rights Reserved | Design by <a href="#">RD Fitness</a></p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<script>
+		$('#slider').coinslider();
+	</script>
+
+</body>
+
+</html>

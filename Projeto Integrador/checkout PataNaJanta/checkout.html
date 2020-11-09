@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout</title>
+
+        <!-- CSS BOOTSTRAP -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+        <!-- MEU CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-7">
+
+                    <div class="card espacoTop10">
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h4>1 - Endereço de Entrega</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-sm-12 espacoTop10">
+                                    <input type="text" maxlength="9" class="form-control" id="txtCEP" placeholder="CEP">
+                                    <h6 class="espacoTop10" id="msgErro"></h6> 
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-12 espacoTop10">
+                                    <input type="text" class="form-control" id="txtNomeDest" placeholder="Destinatario">  
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-8 espacoTop10">           
+                                    <input type="text" class="form-control" id="txtRua" placeholder="Rua">  
+                                </div>
+                
+                                <div class="col-sm-4 espacoTop10">           
+                                    <input type="text" class="form-control" id="txtNumRua" placeholder="N°">  
+                                </div>
+                            </div>
+                
+                            <div class="row">
+                                <div class="col-sm-12 espacoTop10">
+                                    <input type="text" class="form-control" id="txtComplemento" placeholder="Complemento">
+                                </div>
+                            </div>
+                
+                            <div class="row espacoBottom20">
+                
+                               <div class="col-sm-5 espacoTop10">
+                                    <input type="text" class="form-control" id="txtBairro" placeholder="Bairro">
+                               </div>
+
+                               <div class="col-sm-5 espacoTop10">
+                                    <input type="text" class="form-control" id="txtCidade" placeholder="Cidade">
+                               </div>
+
+                               <div class="col-sm-2 espacoTop10">
+                                    <select class="custom-select" id="cbbUF">
+                                        <option selected value="NULL">-UF-</option>
+                                        <!-- JSON CONSUMIDO -->
+                                    </select>
+                               </div>
+          
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <a href="http://www.buscacep.correios.com.br/sistemas/buscacep/BuscaCepEndereco.cfm" target="_blank">
+                                        <h6 id="lblEsqueciCep">Esqueci o CEP</h6>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+
+        <script src="javascript/axios.js"></script>
+        <script src="javascript/requestUF.js"></script>
+        <script src="javascript/requestCEP.js"></script>    
+    </body>
+</html>

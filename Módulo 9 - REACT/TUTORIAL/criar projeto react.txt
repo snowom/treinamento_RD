@@ -1,0 +1,16 @@
+//CRIAR PROJETO
+npx create-react-app NOME_PROJETO
+
+//INICIAR SERVER
+npm start
+
+//INSTALAR BOOTSTRAP NO PROJETO
+-> Link tutorial: https://create-react-app.dev/docs/adding-bootstrap/
+sudo npm install --save bootstrap
+
+//INSTALAR JSON SERVER NA MAQUINA
+sudo npm install -g json-server
+
+
+//INSTALAR AXIOS NO PROJETO E REACT ROUTES NO PROJETO
+sudo npm i --save-dev react-router@3.0.2 axios@0.15.3

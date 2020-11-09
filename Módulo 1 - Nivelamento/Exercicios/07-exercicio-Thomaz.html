@@ -1,0 +1,26 @@
+<script>
+
+	//Exercicio 1
+	
+	function calculaDiasDeVida(idade){
+		const DIAS = 365;
+		return idade * DIAS;
+	}
+	
+	//Exercicio 2
+	function calculaBatimentos(dias){
+		const FREQ = 115200;
+		return FREQ * dias;
+	}
+
+	var idade = prompt("Quantos anos você tem?");
+	//var dias = idade * 365;
+	
+	//Exercicio 1 - Refatoração
+	document.write("Você já viveu " + calculaDiasDeVida(idade)+ " dias de vida");
+	document.write("<br>");
+	//var batimentos = dias * 24 * 60 * 80;
+	
+	//Exercicio 3 e Exercicio 2 - Refatoração
+	document.write("Seu coração já bateu " + calculaBatimentos(calculaDiasDeVida(idade)) + " vezes. Haja coração!");
+</script>

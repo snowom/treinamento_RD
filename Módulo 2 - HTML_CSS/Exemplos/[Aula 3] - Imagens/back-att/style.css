@@ -1,0 +1,15 @@
+pre {
+	max-height: 150px;
+	border: 1px solid silver;
+	overflow: auto;
+	background: url('musica-boa.jpg');
+	color: red;
+}
+
+.scroll { background-attachment: scroll; }
+
+.fixed { background-attachment: fixed; }
+
+.local { background-attachment: local; }
+
+body { padding: 10% }

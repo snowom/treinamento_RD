@@ -1,0 +1,52 @@
+routes/web.php
+    Route::get('/', function () {
+        return view('welcome');
+    });
+
+    rota simples com função anonima
+        Route::get('/contato', function () {
+            return "Contato";
+        });
+
+    rota com id
+        Route::get('/contato/{id}', function ($id) {
+            return "Contato id = $id";
+        });
+
+    rota com id opcional
+        Route::get('/contato/{id?}', function ($id = null) {
+            return "Contato id = $id";
+        });
+
+utilizando post
+
+    welcome.blade.php
+        <h2>teste com rotas:</h2>
+        <form action="/contato" method="post">
+            {{ csrf_field() }}
+            <input type="text" name="nome" placeholder="Nome / POST">
+        <button>Enviar</button>
+        </form>
+
+    routes/web.php
+        visualizar os dados enviados por POST
+        Route::post('/contato', function (){
+            dd($_POST);
+            return "Contato POST";
+        });
+
+        rotas com put - para atualizar dados
+        Route::put('/contato', function (){
+            return "Contato PUT";
+        });
+
+    welcome.blade.php
+
+        <form action="/contato" method="post">
+            {{ csrf_field() }}
+            <input type="hidden" name="_method" value="put">
+            <input type="text" name="nome" placeholder="Nome / PUT">
+            <button>Enviar</button>
+        </form>
+
+    

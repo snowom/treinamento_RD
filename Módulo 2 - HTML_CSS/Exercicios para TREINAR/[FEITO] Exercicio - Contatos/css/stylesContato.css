@@ -1,0 +1,7 @@
+input:focus{
+    background-color: yellow;
+}
+
+textarea{
+    resize:vertical;
+}

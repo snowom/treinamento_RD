@@ -1,0 +1,134 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    height: 100px;
+}
+
+/* ------ SEARCH ----------- */
+
+.btn-pesquisar{
+    height: 30px;
+    width: 30px;
+    background-color: hotpink;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.container-search{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 100px;
+    background-color: grey;
+}
+
+.input-search{
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 35px;
+}
+
+
+/* -------- EMAIL ------------ */
+
+.container-email{
+    height: 100px;
+}
+
+.div-teste{
+    width: 300px;
+    height: 60px;
+    /* background-color: lawngreen; */
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.img-email{
+    height: 50px;
+    width: 130px;
+    /* background-color: rgb(204, 0, 255); */
+    float: right;
+    color: white;
+}
+
+.img-email::before{
+    content: "";
+    background-image: url(../images/header-account.png);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    margin-left: -170px;
+    margin-top: 18px;
+}
+
+
+/* --------- NAV LATERAL ----------- */
+
+.nav-lateral{
+    width: 200px;
+    height: 600px;
+    background-color: rgb(102, 101, 101);
+}
+
+.container-dados{
+    width: 150px;
+    height: 200px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    /* background-color: tomato; */
+}
+
+h4{
+    color: white;
+}
+
+h5{
+    color: white;
+    margin-top: -20px;
+}
+
+/* ------ LINKS -------- */
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.links{
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: indigo; */
+}
+
+.marcador{
+    height: 30px;
+    width: 30px;
+    background-color: hotpink;
+    border-radius: 20px;
+}
+
+.conteudo-links{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.conteudo-links:hover{
+    background-color: green;
+}
+
+.div-search{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}

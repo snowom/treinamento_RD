@@ -1,0 +1,22 @@
+<script>
+	
+	function verificaNumeros(array){
+		
+		for(var i = 0; i<array.length; i++){
+			
+			if(array[i] % 2 == 0){
+				contaNumerosPares++;
+			}
+		}
+		
+		contaNumerosImpares = array.length - contaNumerosPares;
+		document.write("No array [ " + array + " ] existem " + contaNumerosPares + " números pares e " + contaNumerosImpares + " números ímpares");
+	}
+	
+	var numeros = [899,45,300,655,888,2000,4000,34,56,67];
+	var contaNumerosPares=0;
+	var contaNumerosImpares = 0;
+	
+	verificaNumeros(numeros);
+
+</script>

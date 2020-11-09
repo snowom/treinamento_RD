@@ -1,0 +1,34 @@
+Implementar login
+composer update --ignore-platform-reqs
+composer require laravel/ui "^2.0"
+php artisan ui bootstrap --auth
+proteger rotas
+    Route::group(['middleware'=>'auth'], function (){
+        //colocar rotas que devem ser protegidas aqui
+        });
+em resources/views/auth/login.blade.php e resources/views/auth/register.blade.php
+@extends('layout.site')
+@section('titulo', 'Login')
+@section('conteudo')
+    //colocar conteudo aqui
+@endsection
+configurar menu e logout
+resources/views/layout/includes/menu.blade.php
+usar a estrutura 
+@guest
+    layout a ser exibido quando usuário está deslogado
+@else
+    layout a ser exibido quando usuário está logado
+@endguest
+Para exibir o nome do usuário
+    {{ Auth::user()->name }}
+Rota para logout
+    {{ route('logout') }}
+Traduzir os retornos
+    resources/lang
+        criar a pasta pt_bt
+    resources/lang/pr_br
+        colar os arquivo commitados no github do projeto feito em aula
+    config/app.php
+        aprox na linha 83
+            trocar 'locale' => 'en' por 'locale' => 'pt_br'

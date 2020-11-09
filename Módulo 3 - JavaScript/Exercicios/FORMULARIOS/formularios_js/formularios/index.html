@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>formularios</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                          <h1 class="display-4">Formulários</h1>
+                          <p class="lead">Aula de Formulários com JS</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mx-auto mt-5">
+                    <form name="formJonas" action="https://www.google.com.br/" method="GET">
+                        <input type="hidden" value="099132oqwd9asd98ashd">
+                        <div class="form-group">
+                            <label class="teste">Nome Completo: </label>
+                            <input type="text" class="form-control nome" placeholder="Digite seu nome aqui!">
+                        </div>
+                        <div class="form-group">
+                            <label>Email: </label>
+                            <input type="email" class="form-control" placeholder="ex: nome@gmail.com" required>
+                        </div>
+                    
+                        <h3>Estado Civil</h3>
+                        
+                        <div class="form-check">
+                            <input type="radio" id="check_solteiro"  class="form-check-input estado-civil" name="estado_civil" value="Solteiro">
+                            <label class="form-check-label" for="check_solteiro">Solteiro</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" id="check_casado" class="form-check-input estado-civil" name="estado_civil" value="Casado">
+                            <label class="form-check-label" for="check_casado">Casado</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" id="check_estavel" class="form-check-input estado-civil" name="estado_civil" value="união estavel">
+                            <label class="form-check-label" for="check_estavel">união estavel</label>
+                        </div>
+                        
+                        <h3>Hobbies</h3>
+                        <div class="form-check">
+                            <input class="form-check-input hobbies" id="surf" type="checkbox" name="hobbies" value="Surf">
+                            <label class="form-check-label" for="surf">Surf</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input hobbies" id="musica" type="checkbox" name="hobbies" value="Música">
+                            <label class="form-check-label" for="musica">Música</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input hobbies" id="cinema" type="checkbox" name="hobbies" value="Cinema">
+                            <label class="form-check-label" for="cinema">Cinema</label>
+                        </div>
+                        <h3>professores</h3>
+                        <select id="professores" name="professores" class="form-control">
+                            <option value="">escolha o professor</option>
+                            <option value="jonas">Jonas</option>
+                            <option value="leo">Léo</option>
+                            <option value="fabio">Fabio</option>
+                            <option value="Ivo">Ivo</option>
+                            <option value="Andreia">Andréia</option>
+                        </select>
+
+                        <h3>País</h3>
+                        <select name="pais" class="form-control">
+                            <option value="">escolha o páis</option>
+                            <optgroup label="Sul América">
+                                <option value="Ar">Argentina</option>
+                                <option value="Br">Brasil</option>
+                                <option value="Co">Colômbia</option>
+                            </optgroup>
+                            <optgroup label="Europa">
+                                <option value="Es">Espanha</option>
+                                <option value="It">Itália</option>
+                                <option value="In">Inglaterra</option>
+                            </optgroup>
+                        </select>
+
+                        <h3>Textarea</h3>
+                        <div class="form-group">
+                            <label for="mensagem">Deixe sua Mensagem</label>
+                            <textarea class="form-control" id="mensagem" name="mensagem"></textarea>
+                            <div class="alert alert-danger alert-mensagem" style="display: none;" role="alert">
+                               minimo 3 linha
+                            </div>
+                        </div>
+
+                        <h3>hidden</h3>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item">
+                                <span class="page-link" onclick="diminuir()"  aria-label="Previous">
+                                  <span aria-hidden="true">-</span>
+                                </span>
+                              </li>
+                              <li class="page-item"><span class="page-link qtd">1</span></li>
+                              <li class="page-item">
+                                <span class="page-link" onclick="aumentar()" aria-label="Next">
+                                  <span aria-hidden="true">+</span>
+                                </span>
+                              </li>
+                            </ul>
+                          </nav>
+                          <input class="qtdProduto" type="hidden" value="">
+
+                          <div class="form-group">
+                            <label >Teste Evento: </label>
+                            <input type="text" class="form-control teste-evento" placeholder="Digite seu nome aqui!">
+                            <div class="alert alert-warning evento-aviso" style="display: none;" role="alert">
+                                revise o que você digitou
+                              </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Teste validação: </label>
+                            <input type="text" class="form-control teste-validacao" placeholder="Digite seu nome aqui!">
+                            <div class="alert alert-warning aviso-min-cara" style="display:none;" role="alert">
+                                minimo 3 caracteres
+                              </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>CPF: </label>
+                            <input type="text" class="form-control input-cpf" placeholder="Digite seu nome aqui!">
+                            <div class="alert alert-danger alert-cpf" style="display:none;" role="alert">
+                                digite um CPF valido
+                              </div>
+                        </div>
+                        
+                        <br>
+                        <div class="container-btn">
+                            <button class="btn btn-light" type="reset">limpar</button>
+                            <button class="btn btn-success btn-lg" type="submit">enviar</button>
+                        </div>
+
+                        <br><br>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="js/app.js"></script>
+    </body>
+</html>

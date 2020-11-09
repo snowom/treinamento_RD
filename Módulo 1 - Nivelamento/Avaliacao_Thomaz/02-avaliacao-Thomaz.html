@@ -1,0 +1,36 @@
+<script>
+
+	function maisMenos(array){
+		
+		var arraySaida  = [];
+		var pNumPositivo = 0;
+		var pNumNulo = 0;
+		var pNumNegativo = 0;
+		
+		for(var i = 0; i<array.length; i++){
+			
+			if( array[i] > 0){
+				pNumPositivo++;
+			}
+			else if( array[i] < 0){
+				pNumNegativo++;
+			}
+			else{
+				pNumNulo++;
+			}
+		}
+		
+		arraySaida[0] = pNumPositivo/array.length;
+		arraySaida[1] = pNumNulo/array.length;
+		arraySaida[2] = pNumNegativo/array.length;
+		
+		return arraySaida;
+	}
+	
+	
+	//TESTE DE CHAMADA E VISUALIZAÇÂO DO RETORNO DA FUNCAO
+	
+    //var vetor = [1, 2, 0, -1];
+    //document.write( maisMenos(vetor) );
+
+</script>

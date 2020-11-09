@@ -1,0 +1,26 @@
+.borda-redonda{
+    border-radius: 10px;
+    border: solid 1px black;
+}
+h4{
+    color: #351912;
+}
+
+#msgErro{
+    color: red;
+    display: none;
+}
+
+#lblEsqueciCep{
+    color: #b7773f;
+    text-decoration: underline;
+    display: inline;
+}
+
+.espacoBottom20{
+    margin-bottom: 20px;
+}
+
+.espacoTop10{
+    margin-top: 10px;
+}

@@ -1,0 +1,15 @@
+php artisan serve - rodar a aplicação obs: como estamos utilizando laradocker, não há a necessidade, pois quando levantamos os containers a aplicação ja está "rodando".
+
+dando um docker exec -it laradock_workspace_1 /bin/sh - conseguimos acessar os comandos do php artisan.
+
+listar todos os comandos disponiveis
+    php artisan
+ver a versão do laravel
+    php artisan -V
+gerar chave laravel
+    php artisan key:generate
+
+criar novos controllers
+    php artisan make:controller nome_controller
+
+

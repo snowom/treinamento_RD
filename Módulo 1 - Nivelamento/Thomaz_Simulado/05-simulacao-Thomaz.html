@@ -1,0 +1,23 @@
+<script>
+
+	function sequenciaNumeros(num){
+	
+		var arraySaida = [];
+		
+		while(num>1){
+			
+			if(num % 2 == 0){			
+				num = num/2;
+			}
+			else{
+				num = ((3*num) + 1);
+			}
+			arraySaida.push(num);	
+		}
+		
+		document.write(arraySaida);
+	}
+	
+	sequenciaNumeros(10);
+
+</script>

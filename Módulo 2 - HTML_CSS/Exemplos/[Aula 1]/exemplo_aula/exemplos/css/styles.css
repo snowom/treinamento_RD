@@ -1,0 +1,17 @@
+body {
+    background-color: #3cb876;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: justify;
+    line-height: 24px;
+}
+
+h2 {
+    text-decoration: underline;
+}

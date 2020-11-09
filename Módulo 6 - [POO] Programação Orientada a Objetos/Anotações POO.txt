@@ -1,0 +1,93 @@
+
+SOBRECARGA NÂO É POLIMORFISMO - PQ MUDA A ASSINATURA
+
+
+Objeto = Conjunto de valores atribuídos aos atributos da classe + seus métodos
+
+Atributo estatico --> Quando o seu valor é alterado,  ele altera o valor em TODOS os objetos criados referente a classe. Outro ponto, o atributo existe independente do objeto estar instanciado ou não.
+Metodo estatico --> Vc só consegue acessar atributos estáticos a partir dele
+
+
+
+Mensagem --> Chamar método de um objeto;
+Classe Abstrata --> A classe deve ser abstrata quando houver classes derivadas (Classes Filhas) - Não se cria objetos da classe abstrata;  --> CLASSE ABSTRATA FAZ ASSOCIAÇÃO!!!!
+
+=========== SE UM METODO FOR ABSTRATO, AUTOMATICAMENTE A CLASSE SERÁ ABSTRATA!!!! ======================
+Metodo Abstrato --> É feito somente a assinatura do método em sua classe mãe, e nas classes filhas, é feito a regra que o método irá cumprir;
+Quando se é declarada um método abstrato, a classe extendida, será responsável por implementar o método abstrato da classe mãe.
+
+
+================= HERANÇA =================================
+
+Perguntar se classe filha é um tipo da classe mãe - Se for verdade, faz sentido relizar a extensão
+Herança Simples --> A classe filha só extende de uma única classe Mãe
+Herança Multipla --> A classe filha extende de mais de uma classe Mãe
+
+*** PERGUNTA CHAVE ***
+HERANÇA --> CLASSE 1 É UMA CLASSE 2?
+
+
+UPCAST --> ESTUDAR PQ NÂO ENTENDI NADA - Um objeto é tratado como um objeto de outra classe, sendo ela, geralmente a lasse mãe.
+DOWNCAST --> ESTUDAR DISGRAÇAAAAA - Executar downcast somente se o upcast tiver sido feito antes
+
+
+
+
+POLIMORFISMO - É quando um método assume mais de uma forma de comportamento (metodos abstratos e sobrescrita) - Necessário ter herança
+
+
+1) Caso 1 - Metodo abstrato da classe mãe:
+
+--> Só será poliformismo caso a implementação do código nas classes filhas for diferente da implementação do método na classe mãe.
+
+
+2) Caso 2 - Sobrescrita de Método
+
+
+
+========= ASSOCIACÃO ESTRUTURAL - ATRIBUTOS DA CLASSE QUE SERÃO DO TIPO DE OUTRA CLASSE ======================
+
+*** PERGUNTA CHAVE ***
+ASSOCIACÃO --> CLASSE 1 TEM UMA CLASSE 2?
+
+
+1) Associação por Composição: SETA LOSANGO PRETA
+--> A classe usada para compor uma classe mãe, NÂO FAZ SENTIDO SOZINHA (não possui relevancia sozinha), portanto a mesma só será criada para realizar composição.
+
+2) Associação por Agregação: SETA LOSANGO BRANCA
+--> A classe usada para agregar uma classe mãe, FAZ SENTIDO SOZINHA (POSSUI RELEVANCIA SOZINHA), portanto a mesma pode ser usada para realizar agregação.
+--> Quem possui tem a seta branca
+
+
+========== ASSOCIAÇÃO COMPORTAMENTAL ou DEPENDENCIA: SETA PONTILHADA  ===========================
+Ocorre quando se é necessário passar um objeto de uma classe como parâmetro em um método de outra classe OU quando o método CRIA um objeto de outra classe;
+
+
+================= INTERFACE - SETA PONTILHADA COM PONTA BRANCA =================================
+-->Subentende-se que o método da interface É abstrato
+--> A próxima classe concreta terá que implementar os métodos da interface
+--> Não se cria objeto da interface
+--> TODOS os atributos serão estáticos
+--> TODOS os métodos serão abstratos (Precisarão ser implementados nas classes que implementarão as interfaces)
+--> Interface NÂO HERDA de uma classe;
+
+** PERGUNTA CHAVE
+Classe que implementa interface É uma interface;
+Interfaces só possuem Métodos;
+
+
+
+
+============= MODIFICADORES DE ACESSO ================================
+
+PRIVADO --> Atributo ou método será apenas visível na classe que ele pertence. Na UML é representado com um sinal de -
+UTILIZAR GETTERS e SETTERS para acessar e modificar os atributos privados
+
+PUBLICO --> Atributos e métodos são visíveis em TODOS OS LUGARES, mesmo havendo ou não herença ou interface. Na UML é representado com um sinal de +
+PROTEGIDO --> Atributos e métodos serão visível EM TODAS as CLASSES FILHAS e na PROPRIA CLASSE; Na UML é representado com um sinal de #
+
+
+
+OBS JAVA:
+
+final --> Informa que um atributo é constante;

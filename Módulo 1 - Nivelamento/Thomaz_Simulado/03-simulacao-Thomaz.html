@@ -1,0 +1,19 @@
+<script>
+	
+	function numerosMultiplos(multiplicador, inicio, valor_final){
+		
+		var arrayMultiplos = [];
+		var cont = inicio;
+		
+		for(var i = 0; (multiplicador*cont) <= valor_final; i++){
+			
+			arrayMultiplos[i] = (multiplicador*cont);
+			cont++;
+		}
+		
+		document.write(arrayMultiplos);
+	}
+	
+	numerosMultiplos(3,1,30);
+
+</script>

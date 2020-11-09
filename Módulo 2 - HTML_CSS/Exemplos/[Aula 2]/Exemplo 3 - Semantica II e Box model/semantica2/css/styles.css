@@ -1,0 +1,34 @@
+header, div, section, 
+article, footer  {
+    background-color: #23a7ff;
+}
+
+header {
+    height: 100px;
+    width: 400px;
+    background-color: red;
+    overflow: hidden;
+    padding: 15px 30px 15px 30px;
+    margin: 50px 100px 50px 380px;
+    border: solid 5px violet;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: red;
+}
+
+ul li {
+    display: inline-block;
+    background-color: rgb(5, 28, 97);
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    line-height: 45px;
+}
+
+ul li:hover {
+    background-color: royalblue;
+}

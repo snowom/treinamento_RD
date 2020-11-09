@@ -1,0 +1,36 @@
+<script>
+
+
+	function validaEntrada(input){
+		
+		if(!isNaN(input)){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	
+	function imprimeTabuada(){
+	
+		var cont=0;
+		
+		while(cont<=10){
+			document.write(tabuada + " X " + cont + " = " + (tabuada * cont));
+			document.write("<br>");
+			cont = cont+1;
+		}
+	}
+	
+	var tabuada = parseInt(prompt("Digite a tabuada que deseja exibir:"));
+	
+	
+	if(validaEntrada(tabuada)){
+	
+		imprimeTabuada(tabuada);
+	}
+	else{
+		document.write("A entrada não eh um numero!");
+	}
+
+</script>

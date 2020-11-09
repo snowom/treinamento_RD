@@ -1,0 +1,30 @@
+Responsável por controlar o fluxo da aplicação
+
+Criar um novo controller
+    php artisan make::controller ContatoController
+
+routes/web.php
+    Route::get('/contato/{id?}', ['uses'=>'ContatoController@index']);
+
+    Route::post('/contato', ['uses'=>'ContatoController@criar']);
+
+    Route::put('/contato', ['uses'=>'ContatoController@editar']);
+
+app/Http/Controllers/ContatoController.php
+    inserir o método:
+        public function index()
+        {
+            return "Esse é o index do ContatoController";
+        }
+
+        public function criar(Request $req)
+        {
+            //dd($req['nome']);
+            dd($req->all());
+            return "criar";
+        }
+
+        public function editar()
+        {
+            return 'editar';
+        }

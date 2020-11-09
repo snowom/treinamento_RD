@@ -1,0 +1,30 @@
+<script>
+
+	function fibonatti( pos ){
+	
+		var arrayFibonatti = [];
+		
+		for(var i=0; i<=pos; i++){
+			
+			if( i == 0){
+				arrayFibonatti[ i ] = 0;
+			}
+			else if( i == 1){
+				arrayFibonatti[ i ] = 1;
+			}
+			else{
+				arrayFibonatti [i] = arrayFibonatti[i-2] + arrayFibonatti[i-1];
+			}
+		}
+		
+		document.write(arrayFibonatti);
+		document.write("<br>");
+		document.write(arrayFibonatti[arrayFibonatti.length-1]);
+	}
+	
+	fibonatti(7);
+
+</script>
+
+
+

@@ -1,0 +1,26 @@
+app - Diretório principal
+    em rua raiz vemos as Models
+    Http/Controllers 
+        todas as controllers criadas
+
+routes
+    web.php
+        rotas para usar nas view usando o blade
+    api.php 
+        rotas para criar APIs, disponibilizar os dados para serem acessados por outras aplicações
+
+databases
+    factories
+        fabrica de dados randomicos
+    migrations
+        controle da base de dados
+    seeds
+        semeador de dados, para popular o banco de dados
+public
+    onde será executado a aplicação
+
+resources
+    assets
+        js/css
+    view
+        arquivos de template

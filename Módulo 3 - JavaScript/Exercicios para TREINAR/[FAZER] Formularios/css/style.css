@@ -1,0 +1,10 @@
+.margem-top{
+    margin-top: 20px;
+}
+
+.layout-div-form{
+    padding: 20px 0px;
+    border-radius: 10px;
+    border: solid 1px black;
+    /* min-width: 300px; */
+}

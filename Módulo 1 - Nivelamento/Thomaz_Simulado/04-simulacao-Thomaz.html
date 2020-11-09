@@ -1,0 +1,25 @@
+<script>
+
+	function fibonacci(num){
+	
+		var arrayFib = [];
+		
+		for(var i=0; i<=num; i++){
+			
+			if( i==0 || i==1 ){
+				arrayFib[i] = i;
+			}
+			else{
+				arrayFib[i] = arrayFib[i-2] + arrayFib[i-1];
+			}
+		}
+		
+		document.write("Sequencia de Fibonacci ateh o índice " + num + " = [ " + arrayFib + " ]");
+		document.write("<br>");
+		document.write("O valor do índice " + num + " na Sequencia de Fibonacci eh: " + arrayFib[num]);
+		document.write("<br>");
+	}
+	
+	fibonacci(5);
+
+</script>

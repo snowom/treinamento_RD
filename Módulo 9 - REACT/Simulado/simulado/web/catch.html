@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>RD Fitness</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/slider-styles.css" type="text/css" media="all" />
+	<link href='//fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.backgroundPosition.js"></script>
+	<script>
+		$(document).ready(function () {
+
+			$('#ver li a').hover(
+				function () {
+					width = $(this).width() * (-1);
+					$(this).stop().animate({ 'backgroundPosition': '(' + width + ' 0)' }, { duration: 200 });
+				},
+
+				function () {
+					$(this).stop().animate({ 'backgroundPosition': '(0 0)' }, { duration: 200 });
+				}
+			);
+
+			$('#hor li a').hover(
+				function () {
+					height = $(this).height() * (-1);
+					$(this).stop().animate({ 'backgroundPosition': '(0 ' + height + ')' }, { duration: 200 });
+				},
+
+				function () {
+					$(this).stop().animate({ 'backgroundPosition': '(0 0)' }, { duration: 200 });
+				}
+			);
+
+		});
+
+	</script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="wrap">
+			<div class="logo"><a href="index.html"><img src="images/logo.png" alt="Fitness" /></a></div>
+			<ul id="ver">
+				<li><a href="index.html" class="home">Home</a></li>
+				<li><a href="studio.html" class="studio">Studio</a></li>
+				<li><a href="gallery.html" class="gallery">Gallery</a></li>
+				<li><a href="blog.html" class="blog">Blog</a></li>
+				<li><a href="catch.html" class="catch">Catch</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="main-body">
+			<div class="banner">
+				<img src="images/banner.jpg" alt="" />
+			</div>
+			<div class="hr"></div>
+			<div class="grids">
+				<div class="contact">
+					<div class="b-box">
+						<h1>Contact</h1>
+						<div id="contact_form">
+							<form method="post" name="contact" action="?">
+								<p>
+									<label for="author">Name:</label>
+									<input type="text" id="author" name="author" class="required input_field">
+								</p>
+								<p>
+									<label for="email">Email:</label>
+									<input type="text" id="email" name="email"
+										class="validate-email required input_field">
+								</p>
+								<p class="no_margin_right">
+									<label for="subject">Subject:</label>
+									<input type="text" name="subject" id="subject" class="input_field">
+								</p>
+								<div class="cleaner h20"></div>
+
+								<label for="text">Message:</label>
+								<textarea id="text" name="text" rows="0" cols="0" class="required"></textarea>
+								<div class="cleaner h20"></div>
+
+								<input type="submit" value="Send">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="contact-left">
+					<h5>How to find us:</h5>
+					<div class="map">
+						<iframe width="352" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+							src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Austria&amp;aq=1&amp;sll=37.09024,-95.712891&amp;sspn=47.349227,107.138672&amp;ie=UTF8&amp;hq=&amp;hnear=Austria&amp;ll=48.593413,19.072952&amp;spn=0.311089,0.837021&amp;t=m&amp;z=11&amp;output=embed"></iframe><br /><small><a
+								href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Austria&amp;aq=1&amp;sll=37.09024,-95.712891&amp;sspn=47.349227,107.138672&amp;ie=UTF8&amp;hq=&amp;hnear=Austria&amp;ll=48.593413,19.072952&amp;spn=0.311089,0.837021&amp;t=m&amp;z=11"
+								style="color:#555;text-align:left">View Larger Map</a></small>
+					</div>
+					<div class="contact-det">
+						<p>Telephone:1-22-5555</p>
+						<p>Fax:1-22-5555</p>
+						<a href="mailto:info@example.com">
+							<p>Email:fitness(at)mail(dot)com</p>
+						</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="footer-top">
+		<div class="wrap">
+			<div class="f-left">
+				<h2>About</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+					laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+					ullamcorper suscipit lobortis</p>
+			</div>
+			<div class="f-left">
+				<h2>Recent posts</h2>
+				<div class="f-grid">
+					<div class="f-img">
+						<img src="images/pic4.jpg" alt="" />
+					</div>
+					<div class="f-desc">
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit tincidunt</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="f-grid">
+					<div class="f-img">
+						<img src="images/pic5.jpg" alt="" />
+					</div>
+					<div class="f-desc">
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit tincidunt</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="f-left">
+				<h2>Twitter</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+					laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+					ullamcorper suscipit lobortis nisl ut</p>
+			</div>
+			<div class="f-right">
+				<h2>Customer care</h2>
+				<div class="footer-nav">
+					<ul>
+						<li><a href="#">Always free from repetition</a></li>
+						<li><a href="#">Always free from repetition</a></li>
+						<li><a href="#">The standard chunk of Lorem Ipsum</a></li>
+						<li><a href="#">The standard chunk of Lorem Ipsum</a></li>
+						<li><a href="#">The standard chunk of Lorem Ipsum</a></li>
+						<li><a href="#">Always free from repetition</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrap">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="studio.html">Studio</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="catch.html">Catch</a></li>
+			</ul>
+
+			<div class="copy">
+				<p>&copy; 2020 Fitness. All Rights Reserved | Design by <a href="#">RD Fitness</a></p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<script>
+		$('#slider').coinslider();
+	</script>
+
+</body>
+
+</html>

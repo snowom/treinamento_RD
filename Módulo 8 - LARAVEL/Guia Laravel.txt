@@ -1,0 +1,79 @@
+=================== OBSERVACOES ====================
+flash messages
+
+--> Acessar Controllers
+app->Http->Controllers/
+
+
+--> Acessar Models
+app/
+
+
+--> Acessar Migrates
+database->migrations/
+
+
+--> Acessar Rotas
+routes->web.php
+
+
+--> Acesar Views
+resources->views/
+
+
+======== CRIANDO ROTAS ================
+
+Route::get(''caminho da rota que será acessada no navegador", 'Caminho do Controller responsável pela rota'+@+'metodo que realizará ação')->name('ALIAS da rota');
+
+
+
+================= REDIRECIONANDO PAGS ==============================
+
+return redirect()->route(''ALIAS ROTA);
+
+A rota SEMPRE acessará o CONTROLLER!!!!
+
+
+
+================================= INSERINDO DADOS NO BD =======================
+
+Na classe Controller, no método responsável por salvar os dados, dar o seguinte comando:
+
+public function insertBD(Request $req)
+{
+	CLASSE_MODEL::create($req->all());
+}
+
+Na classe Model, setar os fillables (nome dos campos dos formulários que serão pegos a partir do atributo name), utilizando a classe User.php como exemplo
+
+protected $fillable = [
+        'nome', 'descricao', 'preco', 'qtd_estoque', 'imagem'
+    ];
+	
+	
+==================================== RECUPERANDO DADOS DO BD ==========================
+
+-> Select ALL
+
+Na classe Controller, no método responsável porrecuperar os dados, dar o seguinte comando:
+
+public function recuperaDados()
+{
+	$dadosRecuperados = CLASSE_MODEL::all();
+	
+	return view('NOME VIEW QUE SERÁ RETORNADA APOS O GET', compact('dadosRecuperados'));
+	
+}
+
+
+--> Select * from tabela WHERE
+
+Na classe Controller, no método responsável porrecuperar os dados, dar o seguinte comando:
+
+public function recuperaDadosComWhere($id)
+{
+	$dadosRecuperados = CLASSE_MODEL::find($id);
+	
+	return view('NOME VIEW QUE SERÁ RETORNADA APOS O GET', compact('dadosRecuperados'));
+	
+}

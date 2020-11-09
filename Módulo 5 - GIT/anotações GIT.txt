@@ -1,0 +1,139 @@
+GIT
+configurar git
+	git config --global user.name "Jonas"
+	git config --global user.email "Jonas@gmail.com"
+	git config --global color.ui true
+
+criar repositório git
+	criar uma pasta
+	git init
+
+git status -  ver estágio do arquivo
+Untracked files - arquivos que não estão sob o crontrole de versão
+git add nome_do_arquivo -  deixa o arquivo pronto para entrar no controle de versão
+git commit -m "nome do commit" - o arquivo passa a fazer parte do controle de versão
+
+git log - ver logs dos commits
+
+git commit - o terminal abrirá o editor de texto padrão.
+
+git add . - adiciona todos os arquivos que estão em Untracked files
+
+git commit -a -m "nome do commit"  - adiciona os arquivos e commita.
+
+git checkout --nome_do_aruivo - retirar aquivo do commit
+
+git log -p - mostra os logs e a diferença dos arquivos
+
+git log -p -2 - mostra os logs e a diferença dos arquivos dos 2 últimos commits
+
+git log --stat - mostra os logs e mostra as estatisticas dos commits
+
+git log --pretty=oneline - mostra os logs dos commits de uma forma mais compacta
+
+git log --pretty=format:"%h - %an, %ar : %s" - mostra os logs dos commits de uma forma formatada
+
+git log --since=2.days  - mostra os logs dos commits de 2 dias atrás
+
+git log --since=2.weeks  - mostra os logs dos commits de 2 semanas atrás
+
+git reset HEAD NOME_ARQUIVO - volta o arquivo para o estágio de untracked (o arquivo não pode estar commitado e sim adicionado)
+
+git checkout hash_commit - volta para a versão do hash
+
+git branch - ver todas as branchs
+
+git reset HEAD NOME_ARQUIVO
+
+git reset HEAD~1 -  volta para versão anteriores, o numero representa quantas versões quero voltar
+
+git reset HEAD~1 --soft -  volta para versão anteriores, porém os arquivos não ficam commitados.
+
+git reset HEAD~1 --hard - volta para versão anteriores, e deleta os commits que ficaram, nesse caso o HEAD
+
+
+BRANCHS
+git branch - ver todas as branchs e ver a branch atual
+
+git branch -a -  mostra as branch locais e as remotas
+
+git checkout -b nome_branch - cria uma branch, a base da branch será na branch atual
+
+gut checkout nome_branch -  muda para a branch selecionada
+
+
+MERGE
+git merge nome_branch - junta as branch, junta branch atual com a branch digitada
+
+
+REBASE - Fazer isso somente no ambiente local
+git rebase nome da branch -  organiza os commits das branchs em ordem.
+
+
+Criando chave para o github
+ssh-keygen
+
+
+configurando push
+git remote add origin url_repositório_git 
+
+.git/config - conseguimos ver as configurações
+
+git push origin nome_branch - sobe os arquivos para o repositório.
+
+
+Fazendo clone
+git clone nome_repositório
+
+git checkout -b nome_branch origin/branch_remota - cria uma branch baseada em uma branch remota
+
+git pull origin nome_branch - pega as atualizações do repostório remoto
+
+
+Trabalhando com tags - Releases
+git tag nome_versao_tag - cria uma tag
+
+git tag -l - lista as tags
+
+git push origin nome_branch --tags - sobe as tags
+
+
+Versionamento semantico
+0.0.0
+0 - main version - posso quebrar compatibilidade com a versão anterior
+  0 - sub versão - funcionalidades - posso quebrar compatibilidade
+    0 - patch - correções, melhorias - não posso quebrar a compatibilidade
+
+
+Resolvendo conflitos
+HEAD é a branch atual
+
+
+Git bare
+mkdir nome_repositório.git - criando um repositório
+
+git init --bare - criauma repositório para criar os arquivos 
+de controle de versão
+
+git remote add local ssh://localhost/nome_do_repositório_inteiro
+
+git push local nome_branch - da um push localmente
+
+
+Git hook - deploy automatizado
+acessar pasta hooks 
+criar um arquivo chamado post-receive
+dentro do arquivo:
+#!/bin/sh
+GIT_WORK_TREE= repositorio_remoto git checkout -f 
+chmod +x post-receive - dar permissão 
+
+
+
+
+
+
+
+
+
+

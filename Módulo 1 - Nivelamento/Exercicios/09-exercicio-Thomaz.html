@@ -1,0 +1,33 @@
+<script>
+
+	function sorteia(n){
+		return Math.round(Math.random() * n);
+	}
+
+	//var numeroPensado = Math.round(Math.random() * 100);
+	
+	var limite = prompt("Digite o limite de numeros a serem sorteados (Exemplo: De 0 ateh 30)");
+	var numeroPensado = sorteia(limite);
+	var chute = prompt("Já pensei num número de 0 a " + limite + " . Qual você acha que é?");
+
+	console.log(numeroPensado);
+	
+	if( !isNaN(chute)){
+		
+		if(numeroPensado != chute){
+		
+			if(numeroPensado>chute){
+				document.write("O numero chutado eh menor do que o numero sorteado");
+			}
+			else{
+				document.write("O numero chutado eh maior do que o numero sorteado");
+			}
+		}
+		else{
+			document.write("Voce acertou o numero sorteado!!!!");
+		}
+		
+	} else{
+		document.write("O chute nao eh um numero!");
+	}
+</script>

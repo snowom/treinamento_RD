@@ -1,0 +1,19 @@
+
+============= ANOTAÇÕES LARAVEL ======================
+
+--> Utilizar PHP artisan
+
+1) Na pasta do projeto, abrir terminal e executar seguinte comando:
+--> sudo docker container exec -it laradock_workspace_1 bash
+
+2) Após, acessar a pasta do projeto utilizando o comando CD:
+--> cd /nomePasta
+
+3) Digitar o comando "php artisan" pra ver lista de todos os camdnos possíveis
+
+-> Request.all(); --> Retorna toda a requisição;
+
+
+4) Abrir VS Code como superuser
+
+-> sudo code --user-data-dir
